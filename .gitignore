@@ -1,7 +1,14 @@
 __pycache__/
-*.pkl
 *.h5
+*.pkl
+*.pt
+*.weights
+*.zip
+*.rar
+*.tar
+*.tar.gz
 *.ipynb_checkpoints/
-object_detection_Dataset/
 classification_dataset/
+object_detection_Dataset/
 results/
+saved_models/
