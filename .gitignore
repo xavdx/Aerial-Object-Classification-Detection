@@ -1,0 +1,7 @@
+__pycache__/
+*.pkl
+*.h5
+*.ipynb_checkpoints/
+object_detection_Dataset/
+classification_dataset/
+results/
