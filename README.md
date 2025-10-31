@@ -30,8 +30,8 @@ Deep Learning • Computer Vision • TensorFlow/Keras • Streamlit • Transfe
 ## Results & Comparison
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
-| Custom CNN | 0.93 | 0.92 | 0.93 | 0.93 |
-| EfficientNetB0 | 0.96 | 0.96 | 0.96 | 0.96 |
+| Custom CNN | 0.781 | 0.724 | 0.809 | 0.764 |
+| EfficientNetB0 | 0.521 | 0.471 | 0.787 | 0.590 | 
 
 ## Run the Streamlit App
 ```bash
