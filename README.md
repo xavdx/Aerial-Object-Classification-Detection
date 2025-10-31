@@ -29,7 +29,7 @@ Deep Learning • Computer Vision • TensorFlow/Keras • Streamlit • Transfe
 
 ## Results & Comparison
 | Model | Accuracy | Precision | Recall | F1-Score |
-|-------|--------------|----------------|
+|-------|----------|-----------|--------|----------|
 | Custom CNN | 0.93 | 0.92 | 0.93 | 0.93 |
 | EfficientNetB0 | 0.96 | 0.96 | 0.96 | 0.96 |
 
