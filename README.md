@@ -24,7 +24,7 @@ Deep Learning • Computer Vision • TensorFlow/Keras • Streamlit • Transfe
 | Model | Description | Download Link |
 |-------|--------------|----------------|
 | Custom CNN | Best performing binary classifier | [Google Drive Link](https://drive.google.com/file/d/1an3dORosSu-L2u4ZYY61wXgjV85cpRDG/view?usp=drive_link) |
-| EfficientNetB0 | Transfer Learning Model | [Google Drive Link](https://drive.google.com/file/d/1hQ3y45sfv7f3QPkze2et_jYoYN4PZ_Xa/view?usp=drive_link) |
+| EfficientNetB0 | Transfer Learning Model | [Google Drive Link](https://drive.google.com/file/d/1JaESQDhSdSJD0kgfPIHajyU30P9Ad5eq/view?usp=sharing) |
 
 ## Results & Comparison
 | Model | Accuracy | Precision | Recall | F1-Score |
