@@ -30,8 +30,11 @@ Deep Learning • Computer Vision • TensorFlow/Keras • Streamlit • Transfe
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
 | Custom CNN | 0.781 | 0.724 | 0.809 | 0.764 |
-| EfficientNetB0 | 0.521 | 0.471 | 0.787 | 0.590 | 
+| EfficientNetB0 | 0.986 | 0.989 | 0.979 | 0.984 | 
 
+## Conclusion
+**The EfficientNetB0 model classifies images more accurately with average confidence of: 0.9821**
+	
 ## Run the Streamlit App
 ```bash
 streamlit run app.py
