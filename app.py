@@ -7,6 +7,8 @@ import os, json, gdown
 PROJECT_ROOT='/content/drive/MyDrive/aerial_project'
 SAVED_MODELS=os.path.join(PROJECT_ROOT, 'saved_models')
 CLASS_NAMES_FILE=os.path.join(SAVED_MODELS, 'class_names.json')
+
+os.makedirs(SAVED_MODELS, exist_ok=True)
 #Downloading the models from Google Drive in case they're not already present
 CUSTOM_MODEL_PATH=os.path.join(SAVED_MODELS, "best_custom_cnn.h5")
 EFF_MODEL_PATH=os.path.join(SAVED_MODELS, "efficientnet_finetuned_full.h5")
