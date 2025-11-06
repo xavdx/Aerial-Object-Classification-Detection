@@ -11,8 +11,7 @@ Try the app here: [https://aerial-classification.streamlit.app/](https://aerial-
 Deep Learning • Computer Vision • TensorFlow/Keras • Streamlit • Transfer Learning
 
 ## Dataset Sources
-**Classification Dataset:** Bird/Drone images  
-**Object Detection Dataset:** YOLOv8 format (3319 images with .txt annotations)
+**Classification Dataset:** Bird/Drone images. Google Drive Link: https://drive.google.com/drive/folders/1DE7FY5LwUoCIVgJqSeJc89q0Tvii-C51?usp=drive_link
 
 ## Project Workflow
 1. Dataset understanding  
