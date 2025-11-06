@@ -14,13 +14,13 @@ EFF_MODEL_PATH=os.path.join(SAVED_MODELS, "efficientnet_finetuned_full.h5")
 if not os.path.exists(CUSTOM_MODEL_PATH):
     st.info("Downloading Custom CNN model from Google Drive...")
     gdown.download(
-        "https://drive.google.com/uc?id=1JaESQDhSdSJD0kgfPIHajyU30P9Ad5eq",
+        "https://drive.google.com/uc?id=1an3dORosSu-L2u4ZYY61wXgjV85cpRDG",
         CUSTOM_MODEL_PATH,
         quiet=False)
 if not os.path.exists(EFF_MODEL_PATH):
     st.info("Downloading EfficientNetB0 model from Google Drive...")
     gdown.download(
-        "https://drive.google.com/uc?id=1an3dORosSu-L2u4ZYY61wXgjV85cpRDG",
+        "https://drive.google.com/uc?id=1JaESQDhSdSJD0kgfPIHajyU30P9Ad5eq",
         EFF_MODEL_PATH,
         quiet=False)
 #loading class names saved at training time (fallback to default)
