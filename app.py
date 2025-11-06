@@ -3,23 +3,26 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import os, json, gdown
-#paths & class names loading
-PROJECT_ROOT='/content/drive/MyDrive/aerial_project'
-SAVED_MODELS=os.path.join(PROJECT_ROOT, 'saved_models')
-CLASS_NAMES_FILE=os.path.join(SAVED_MODELS, 'class_names.json')
-
+#paths for Streamlit Cloud
+PROJECT_ROOT=os.path.dirname(os.path.abspath(__file__))
+SAVED_MODELS=os.path.join(PROJECT_ROOT, "saved_models")
 os.makedirs(SAVED_MODELS, exist_ok=True)
-#Downloading the models from Google Drive in case they're not already present
+CLASS_NAMES_FILE=os.path.join(SAVED_MODELS, "class_names.json")
+#Downloading models from Google Drive in case they're not already present
 CUSTOM_MODEL_PATH=os.path.join(SAVED_MODELS, "best_custom_cnn.h5")
 EFF_MODEL_PATH=os.path.join(SAVED_MODELS, "efficientnet_finetuned_full.h5")
 if not os.path.exists(CUSTOM_MODEL_PATH):
     st.info("Downloading Custom CNN model from Google Drive...")
-    gdown.download("https://drive.google.com/uc?id=1JaESQDhSdSJD0kgfPIHajyU30P9Ad5eq", CUSTOM_MODEL_PATH, quiet=False)
-
+    gdown.download(
+        "https://drive.google.com/uc?id=1JaESQDhSdSJD0kgfPIHajyU30P9Ad5eq",
+        CUSTOM_MODEL_PATH,
+        quiet=False)
 if not os.path.exists(EFF_MODEL_PATH):
     st.info("Downloading EfficientNetB0 model from Google Drive...")
-    gdown.download("https://drive.google.com/uc?id=1an3dORosSu-L2u4ZYY61wXgjV85cpRDG", EFF_MODEL_PATH, quiet=False)
-
+    gdown.download(
+        "https://drive.google.com/uc?id=1an3dORosSu-L2u4ZYY61wXgjV85cpRDG",
+        EFF_MODEL_PATH,
+        quiet=False)
 #loading class names saved at training time (fallback to default)
 if os.path.exists(CLASS_NAMES_FILE):
     with open(CLASS_NAMES_FILE, 'r') as f:
