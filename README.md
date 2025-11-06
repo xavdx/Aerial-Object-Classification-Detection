@@ -1,5 +1,7 @@
 # Aerial Object Classification & Detection
 This project aims to develop a **deep learning-based solution** that classifies aerial images into **Bird** or **Drone**
+# Live Demo
+Try the app here: [https://aerial-classification.streamlit.app/](https://aerial-classification.streamlit.app/)
 
 ## Objectives
 - Build and compare **Custom CNN** and **Transfer Learning** models.
