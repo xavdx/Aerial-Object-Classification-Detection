@@ -9,3 +9,4 @@ streamlit
 scikit-learn
 Pillow
 ultralytics
+gdown

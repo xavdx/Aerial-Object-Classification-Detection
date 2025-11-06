@@ -2,12 +2,17 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from PIL import Image
+<<<<<<< HEAD
 import os, json, gdown
+=======
+import os, json
+>>>>>>> b821929c5a3060ce5d8c42896a5696c1f7acebe2
 #paths & class names loading
 PROJECT_ROOT='/content/drive/MyDrive/aerial_project'
 SAVED_MODELS=os.path.join(PROJECT_ROOT, 'saved_models')
 CLASS_NAMES_FILE=os.path.join(SAVED_MODELS, 'class_names.json')
 
+<<<<<<< HEAD
 custom_cnn_id="1JaESQDhSdSJD0kgfPIHajyU30P9Ad5eq"
 efficientnet_id="1an3dORosSu-L2u4ZYY61wXgjV85cpRDG"
 
@@ -23,6 +28,8 @@ if not os.path.exists(eff_path):
     st.info("Downloading EfficientNetB0 model from Google Drive...")
     gdown.download(f"https://drive.google.com/uc?id={efficientnet_id}", eff_path, quiet=False)
 
+=======
+>>>>>>> b821929c5a3060ce5d8c42896a5696c1f7acebe2
 #loading class names saved at training time (fallback to default)
 if os.path.exists(CLASS_NAMES_FILE):
     with open(CLASS_NAMES_FILE, 'r') as f:
