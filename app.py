@@ -34,15 +34,13 @@ else:
 @st.cache_resource
 def load_models():
     """Load both models once."""
-    custom_path=os.path.join(SAVED_MODELS,"best_custom_cnn.h5")
     eff_path=os.path.join(SAVED_MODELS,"efficientnet_finetuned_full.h5")
-
-    #Safe load= will raise if missing; let the user know in UI
+    custom_path=os.path.join(SAVED_MODELS,"best_custom_cnn.h5")
     models={}
-    if os.path.exists(custom_path):
-        models['Custom CNN']=tf.keras.models.load_model(custom_path)
     if os.path.exists(eff_path):
         models['EfficientNetB0']=tf.keras.models.load_model(eff_path)
+    if os.path.exists(custom_path):
+        models['Custom CNN']=tf.keras.models.load_model(custom_path)
     return models
 
 MODELS=load_models()
